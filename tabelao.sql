@@ -333,3 +333,6 @@ INSERT INTO TABELAO VALUES ('2002','11 Jun 2002 - 20:30','Group E','Internationa
 INSERT INTO TABELAO VALUES ('2002','13 Jun 2002 - 20:30','Group G','International Stadium Yokohama','Yokohama','Ecuador','Croatia','','65862','43950044','ECU','CRO');
 INSERT INTO TABELAO VALUES ('2002','09 Jun 2002 - 20:30','Group H','International Stadium Yokohama','Yokohama','Japan','Russia','','66108','43950029','JPN','RUS');
 INSERT INTO TABELAO VALUES ('2002','30 Jun 2002 - 20:00','Final','International Stadium Yokohama','Yokohama','Germany','Brazil','','69029','43950064','GER','BRA');
+
+update tabelao set tab_cop_edicao = (select cop_id from copas where cop_edicao = tabelao.tab_cop_edicao);
+update tabelao set tab_cid_nome = (select cid_id from cidades where cid_nome = tabelao.tab_cid_nome);

@@ -1,0 +1,172 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5921B14A-6227-5EF3-ECDC-9540A3927123" name="Partidas">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Essa tabela armazena dados referentes a uma partida disputada durante a copa]]></commentInRDBMS>
+<generatorID>A213E144-0366-2C72-1483-F69BBE55C38B</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="par id" id="0D85CC2F-777F-0A7D-CA98-4A76A3750B73">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave primária da tabela do Partidas]]></commentInRDBMS>
+<generatorID>A8241478-7D09-30C9-5BAA-1D2389E7544B</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="par data" id="120E9C06-AFA6-F559-FEE0-DCC5BC8729BE">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data em que a partida aconteceu]]></commentInRDBMS>
+<generatorID>AC771678-2F33-26CD-B939-C910EE8E6629</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="par publico" id="59F1C310-B834-F1A6-FB21-2F5E43841B77">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quantidade de espectadores na partida]]></commentInRDBMS>
+<generatorID>63727947-09D8-52E9-C8D5-A3E40DC446A6</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="par fase" id="06D4B9A3-9642-F881-65E8-D64FA88D89C5">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fase da copa em que a partida aconteceu]]></commentInRDBMS>
+<generatorID>94593D66-4C36-2D17-3A23-908918873B56</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="par condicoes de vitoria" id="8DD057AE-A34A-FB10-F240-C5CB40504D18">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Condições de vitória do time vencedor]]></commentInRDBMS>
+<generatorID>1BF05B83-CFBE-C216-414A-1827553AF719</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="par cop id" id="A36BC794-A4DB-C2E3-CBEF-94E990A92B16">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Referência a edição da copa a partida aconteceu]]></commentInRDBMS>
+<generatorID>9F3855D6-639C-9299-15C7-B8D1E957663D</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<referedAttribute>F7AD6D28-0982-6CAA-7A8C-276277175C99</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="par esc id A" id="8854C07D-4E94-A928-BCA4-B484A8BB428E">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Referência a um dos times escalados para a partida]]></commentInRDBMS>
+<generatorID>5C544A26-2C42-B615-809D-D5798705468F</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<referedAttribute>293F1FDA-A20D-CBCB-AF0A-9878234C48FD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="par esc id B" id="133DC5E5-0D51-6C5C-16CA-42C8C213D054">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Referência a um dos times escalados para a partida]]></commentInRDBMS>
+<generatorID>819A27A0-9810-BA56-57F0-4A5E9AB89888</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<referedAttribute>293F1FDA-A20D-CBCB-AF0A-9878234C48FD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="par est id" id="4F05960F-CFCC-1784-63F6-BE23BE206F10">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Referência ao estádio em que a partida aconteceu]]></commentInRDBMS>
+<generatorID>E4A4F201-30B3-CB02-208F-B1ED61011DA3</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<referedAttribute>BFD8AE84-6D91-012E-AB65-B0A2A78608AE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BC547C0B-325D-6345-C44C-C095A9EDA046" name="PK par">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<generatorID>635105F5-33E7-BD12-23F3-906D705874DA</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0D85CC2F-777F-0A7D-CA98-4A76A3750B73</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

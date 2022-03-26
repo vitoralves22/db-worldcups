@@ -1,0 +1,192 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A213E144-0366-2C72-1483-F69BBE55C38B" name="Partidas">
+<sourceDDLFile>copa.ddl</sourceDDLFile>
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-24 23:20:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Essa tabela armazena dados referentes a uma partida disputada durante a copa.]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="par_id" id="A8241478-7D09-30C9-5BAA-1D2389E7544B">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-24 23:27:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave primária da tabela PARTIDAS.]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="par_data" id="AC771678-2F33-26CD-B939-C910EE8E6629">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-24 23:33:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna armazena a data em que a partida aconteceu.
+]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="par_publico" id="63727947-09D8-52E9-C8D5-A3E40DC446A6">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 00:44:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna armazena a quantidade de espectadores na partida.
+
+]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="par_fase" id="94593D66-4C36-2D17-3A23-908918873B56">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 22:40:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna armazena a fase da copa em que a partida aconteceu.
+]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="par_condicoes_de_vitoria" id="1BF05B83-CFBE-C216-414A-1827553AF719">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 22:19:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna armazena as condições de vitória especiais ocorridas na partida.
+
+
+]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="par_cop_id" id="8E9AE2E8-9A5B-0CA0-5752-CF43ACA56E0B">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 00:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna faz referência à tabela Copas, indicando em qual edição da copa a partida aconteceu.
+]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A10D337C-251F-06E3-08EB-1F3899B62E45" referredColumn="1F71A029-67B6-6DAC-8CF8-A50952EB6B60"/>
+</associations>
+</Column>
+<Column name="par_esc_id_A" id="FA439AFE-5061-E019-4C82-FBD69F3099B1">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 00:27:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna faz referência à tabela Escalacoes, indicando a escalação da equipe mandante para a partida.]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="411F284E-2FC6-863F-4EE3-088C921A1D03" referredColumn="97935CDD-FDC7-4479-D8A6-3CE35109FB22"/>
+</associations>
+</Column>
+<Column name="par_esc_id_B" id="D31AC586-CFCD-1124-7EA6-FF3AB738F312">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 00:27:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna faz referência à tabela Escalacoes, indicando a escalação da equipe visitante para a partida.]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ED881440-2F7E-6186-9A96-5B84FE2E905B" referredColumn="97935CDD-FDC7-4479-D8A6-3CE35109FB22"/>
+</associations>
+</Column>
+<Column name="par_est_id" id="EF4F6D3F-8C54-F70E-B427-33967EBD0535">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 00:39:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna faz referência à tabela Estadios, indicando o estádio em que a partida aconteceu.]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3E001E18-922E-9042-C09C-33D3F2F16826" referredColumn="2E1F2EA1-F46F-F8A5-9341-37DDB4FEA9BF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="635105F5-33E7-BD12-23F3-906D705874DA" name="PK_par">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-24 23:28:19 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A8241478-7D09-30C9-5BAA-1D2389E7544B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E8537CE9-38DE-DBE8-DD61-B31F2BF87ECE" name="FK_par_cop">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 22:55:31 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E9AE2E8-9A5B-0CA0-5752-CF43ACA56E0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3208D5F6-52E0-7DF8-E2A6-B53FF1A499FA" name="FK_par_esc_A">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 22:56:05 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA439AFE-5061-E019-4C82-FBD69F3099B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C64C9055-91B2-6553-2EBA-EE2932526A81" name="FK_par_esc_B">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 22:56:36 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D31AC586-CFCD-1124-7EA6-FF3AB738F312"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7F24731D-AB26-169C-0A24-7254D9D5D89F" name="FK_par_est">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 22:57:10 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF4F6D3F-8C54-F70E-B427-33967EBD0535"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

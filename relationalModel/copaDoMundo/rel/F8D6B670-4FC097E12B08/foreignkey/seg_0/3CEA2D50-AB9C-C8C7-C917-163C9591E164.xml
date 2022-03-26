@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3CEA2D50-AB9C-C8C7-C917-163C9591E164" containerWithKeyObject="F941A771-D62E-477C-DA65-9891C1136D5D" localFKIndex="02135447-224C-1913-89E9-53A2A395A364" name="FK_esc_sel">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 22:34:41 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<referredTableLongName>Selecoes</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A22FF009-0961-B866-E10A-CA33C096F329</referredTableID>
+<keyObject>DF4B3CBE-FCD8-E01D-3914-5CA826CFF838</keyObject>
+<referredKeyID>DF4B3CBE-FCD8-E01D-3914-5CA826CFF838</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>sel_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

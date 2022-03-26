@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5258C96E-4410-A880-D2F7-D201721BC825" containerWithKeyObject="394A26B6-3220-2FE6-5441-BB9CA00FF356" localFKIndex="1E3BCFB4-5BC7-D4D9-162A-F8200CC83D7B" name="FK_eve_par">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 21:55:30 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<referredTableLongName>Partidas</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A213E144-0366-2C72-1483-F69BBE55C38B</referredTableID>
+<keyObject>635105F5-33E7-BD12-23F3-906D705874DA</keyObject>
+<referredKeyID>635105F5-33E7-BD12-23F3-906D705874DA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>par_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

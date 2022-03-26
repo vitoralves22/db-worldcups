@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9B766129-92F5-A8B6-224A-A523181A49B7" name="Cidades">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta tabela armazena dados referentes às cidades em que se encontram os Cidades]]></commentInRDBMS>
+<generatorID>43ACD32E-475B-200C-4CDC-95C6882CDDC4</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cid id" id="EF545A67-6EC6-E2A4-470B-31C16B2359D8">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave primária da tabela do Cidades]]></commentInRDBMS>
+<generatorID>AD199230-A538-596C-0F1A-714C8BD20E18</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cid pai id" id="EB69F2AA-3089-29C3-D65F-4429546CBCA7">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Referência a tabela Países, indicando em qual país esta cidade pertence]]></commentInRDBMS>
+<generatorID>68DC57AD-75CE-EBDC-8D8F-830F0F1B8A6A</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<referedAttribute>B544524B-7B8C-BC85-F7E0-5B61AF256EBA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cid nome" id="FB0D5BCB-E55B-6AA6-5B55-CAE5031B4655">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nomes das cidades]]></commentInRDBMS>
+<generatorID>1FA88E9C-2A8D-75CC-B787-C4AB2A3EF992</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="930D9B01-BBB7-7A7A-60D0-EF9256E60290" name="PK cid">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<generatorID>E00AD379-139B-37B2-7F45-59201D677704</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EF545A67-6EC6-E2A4-470B-31C16B2359D8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

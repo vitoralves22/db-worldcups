@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="copaDoMundo" id="7F1B6278-3F56-0811-8ED5-024D12A24C8E" version="3.5">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-24 23:09:56 UTC</createdTime>
+<ownerDesignName>v1</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>7F1B6278-3F56-0811-8ED5-024D12A24C8E</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="085B71AF-B008-36E7-577A-67D7ED40B10A">
+<designStoragePath>C:\copa</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

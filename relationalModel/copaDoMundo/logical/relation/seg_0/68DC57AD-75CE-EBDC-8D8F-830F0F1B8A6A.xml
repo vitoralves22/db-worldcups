@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_cid_pai" directorySegmentName="seg_0" id="68DC57AD-75CE-EBDC-8D8F-830F0F1B8A6A">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<generatorID>1AB1C390-BDAA-F869-9575-473D92D132C8</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<sourcePk>9CD45932-EB87-EE0D-3048-4A2F8E0D9515</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1A9728DE-97A1-0B94-E219-77B4580E2943</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9B766129-92F5-A8B6-224A-A523181A49B7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

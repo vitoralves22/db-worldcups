@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="394A26B6-3220-2FE6-5441-BB9CA00FF356" name="Eventos">
+<sourceDDLFile>copa.ddl</sourceDDLFile>
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 21:44:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta tabela armazena dados referentes aos eventos que podem acontecer durante uma partida.]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="eve_id" id="5053E3A6-8D4E-093C-5F7D-1AD0919EDBCA">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 21:47:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave primária da tabela  EVENTOS.]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="eve_tempo_decorrido" id="CEDCB87D-E47A-0806-AFB1-CE38DC74541A">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 21:52:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna armazena a marcação de tempo de partida no momento do acontecimento do evento (em minutos).]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="eve_descricao" id="2CE540A5-9912-9D14-82B5-0F0E87D1AC7F">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 21:52:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do evento (cartões, faltas, gols, substituições etc.).]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="eve_jog_id" id="AD8EDEC2-C4B7-E379-2C15-148AC0CC1123">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 21:52:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna faz referência à tabela Jogadores, indicando o jogador envolvido no evento.
+]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A24A2CB7-9407-089D-6043-BA3538219AAB" referredColumn="593C37F3-264E-F51B-EA26-F3F3B0422EB4"/>
+</associations>
+</Column>
+<Column name="eve_par_id" id="AE0A65FC-D450-EBF4-1C6E-60B786686A99">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 21:53:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna faz referência à tabela Partidas, indicando a partida em que o evento ocorreu.
+]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5258C96E-4410-A880-D2F7-D201721BC825" referredColumn="A8241478-7D09-30C9-5BAA-1D2389E7544B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4018937F-2B65-C543-A63D-53F4C6A5368A" name="PK_eve">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 21:55:08 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5053E3A6-8D4E-093C-5F7D-1AD0919EDBCA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6BDBFE9F-BEB8-120F-F0AB-81D6F3C97076" name="FK_eve_jog">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 21:55:30 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD8EDEC2-C4B7-E379-2C15-148AC0CC1123"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1E3BCFB4-5BC7-D4D9-162A-F8200CC83D7B" name="FK_eve_par">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 21:55:30 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE0A65FC-D450-EBF4-1C6E-60B786686A99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

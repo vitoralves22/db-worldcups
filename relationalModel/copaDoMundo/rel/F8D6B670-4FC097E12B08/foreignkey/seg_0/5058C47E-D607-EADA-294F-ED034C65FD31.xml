@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5058C47E-D607-EADA-294F-ED034C65FD31" containerWithKeyObject="40F9D3FD-0D08-FD19-2DF2-26A02F89F4F4" localFKIndex="341EA48D-B097-EBE5-A663-7679CD21F8FC" name="FK_est_cid">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 01:54:31 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<referredTableLongName>Cidades</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>43ACD32E-475B-200C-4CDC-95C6882CDDC4</referredTableID>
+<keyObject>E00AD379-139B-37B2-7F45-59201D677704</keyObject>
+<referredKeyID>E00AD379-139B-37B2-7F45-59201D677704</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cid_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

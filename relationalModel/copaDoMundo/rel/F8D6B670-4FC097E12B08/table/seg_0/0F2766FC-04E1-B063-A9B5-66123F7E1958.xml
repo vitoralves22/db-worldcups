@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0F2766FC-04E1-B063-A9B5-66123F7E1958" name="Paises">
+<sourceDDLFile>copa.ddl</sourceDDLFile>
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-24 23:20:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta tabela armazena dados referentes aos países em que se encontra cada país.]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<ordsAlias>table_12</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pai_id" id="AB162E58-EDF5-BBC3-20AE-6C0E71F17DE4">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-24 23:27:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave primária da tabela  PAISES.]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pai_nome" id="1C8A1A48-55D3-3B91-3666-5F9E27383CD4">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 00:42:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna armazena o nome do país.
+]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C08B4FA3-BC85-6C05-C811-9231001FB9BA" name="PK_pai">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-24 23:28:29 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB162E58-EDF5-BBC3-20AE-6C0E71F17DE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

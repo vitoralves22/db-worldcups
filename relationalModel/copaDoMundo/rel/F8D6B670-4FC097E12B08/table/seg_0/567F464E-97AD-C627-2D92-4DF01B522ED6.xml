@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="567F464E-97AD-C627-2D92-4DF01B522ED6" name="HCopas">
+<sourceDDLFile>copa.ddl</sourceDDLFile>
+<createdBy>kauan</createdBy>
+<createdTime>2022-04-08 01:08:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta tabela armazena dados referentes às Copas.]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="hcop_id" id="41F9E044-280C-D9A6-4F4C-DBDE03EDA38F">
+<createdBy>kauan</createdBy>
+<createdTime>2022-04-08 01:08:26 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hcop_edicao" id="943283D4-5BC0-B50B-6AB7-515F8715FBBA">
+<createdBy>kauan</createdBy>
+<createdTime>2022-04-08 01:08:26 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hcop_date_in" id="53940668-A565-FD6A-046A-3BB72F536C1A">
+<createdBy>kauan</createdBy>
+<createdTime>2022-04-08 01:17:44 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="84998AB8-6C9F-7600-2FEB-CDBE91903E71" name="PK_hcop">
+<createdBy>kauan</createdBy>
+<createdTime>2022-04-08 01:08:26 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41F9E044-280C-D9A6-4F4C-DBDE03EDA38F"/>
+<colUsage columnID="53940668-A565-FD6A-046A-3BB72F536C1A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

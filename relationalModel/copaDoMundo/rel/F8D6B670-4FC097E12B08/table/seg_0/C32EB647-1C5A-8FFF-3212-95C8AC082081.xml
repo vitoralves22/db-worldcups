@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C32EB647-1C5A-8FFF-3212-95C8AC082081" name="HEscalacoes">
+<sourceDDLFile>copa.ddl</sourceDDLFile>
+<createdBy>kauan</createdBy>
+<createdTime>2022-04-08 01:07:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta tabela armazena dados referentes às escalações realizadas.]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="hesc_id" id="64BCBFAF-BA58-DBD1-A00F-B39F54AAE8FD">
+<createdBy>kauan</createdBy>
+<createdTime>2022-04-08 01:07:30 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hesc_cop_id" id="7AD056A2-FAA9-9B29-C8B0-CA45EA1B90A2">
+<createdBy>kauan</createdBy>
+<createdTime>2022-04-08 01:07:30 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hesc_sel_id" id="7470B5D8-CFDE-CA72-2B5D-2F49AA12AC90">
+<createdBy>kauan</createdBy>
+<createdTime>2022-04-08 01:07:30 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hesc_tre_id" id="621594A5-FBC4-7BD4-3CCF-3F28D20AA188">
+<createdBy>kauan</createdBy>
+<createdTime>2022-04-08 01:07:30 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hesc_date_in" id="917DBB8F-C3CD-149C-3051-931ADF907060">
+<createdBy>kauan</createdBy>
+<createdTime>2022-04-08 01:13:48 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B0E6BBF6-4984-D8DD-DF0A-27EB1CFAB86C" name="PK_hesc">
+<createdBy>kauan</createdBy>
+<createdTime>2022-04-08 01:07:30 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64BCBFAF-BA58-DBD1-A00F-B39F54AAE8FD"/>
+<colUsage columnID="917DBB8F-C3CD-149C-3051-931ADF907060"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

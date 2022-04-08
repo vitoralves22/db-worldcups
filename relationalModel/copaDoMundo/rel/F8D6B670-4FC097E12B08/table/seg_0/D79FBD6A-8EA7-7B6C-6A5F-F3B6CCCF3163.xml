@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D79FBD6A-8EA7-7B6C-6A5F-F3B6CCCF3163" name="HPaises">
+<sourceDDLFile>copa.ddl</sourceDDLFile>
+<createdBy>kauan</createdBy>
+<createdTime>2022-04-08 01:08:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta tabela armazena dados referentes aos países em que se encontra cada país.]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<ordsAlias>table_12</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="hpai_id" id="50191139-FE84-E0AC-7579-3A4B26952B20">
+<createdBy>kauan</createdBy>
+<createdTime>2022-04-08 01:08:43 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hpai_nome" id="831E03A0-B10D-CBEE-858D-3B0B65380CD8">
+<createdBy>kauan</createdBy>
+<createdTime>2022-04-08 01:08:43 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hpar_date_in" id="EB1CEB8E-5906-96F3-FA47-9710020CBA67">
+<createdBy>kauan</createdBy>
+<createdTime>2022-04-08 01:14:59 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C3229F07-50F0-4908-188A-CFEF3E0CC3C5" name="PK_hpai">
+<createdBy>kauan</createdBy>
+<createdTime>2022-04-08 01:08:43 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50191139-FE84-E0AC-7579-3A4B26952B20"/>
+<colUsage columnID="EB1CEB8E-5906-96F3-FA47-9710020CBA67"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

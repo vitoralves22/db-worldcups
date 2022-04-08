@@ -373,5 +373,299 @@ BEGIN
     :NEW.sel_id := seq_sel.nextval; 
 end;
 /
---------------------------------------------------------------------------------------------------
+
+/*CREATE TRIGGER tg_bi_est2
+BEFORE INSERT ON estadios
+FOR EACH ROW
+
+DECLARE
+
+  est_cid_id integer;
+BEGIN
+
+  select distinct tab_cid_nome
+
+into est_cid_id
+
+from tabelao
+
+where tab_est_nome = :NEW.est_nome;
+:NEW.est_cid_id := est_cid_id;
+end;
+/*/
+------------------------------------------------------------------------------------------------
+
+--------------------------------------------TABELAS DE HISTORIAMENTO ---------------------------
+
+
+CREATE TABLE hcidades (
+    hcid_id      INTEGER NOT NULL,
+    hcid_nome    VARCHAR2(100),
+    hcid_date_in DATE NOT NULL
+);
+
+COMMENT ON TABLE hcidades IS
+    'Esta tabela armazena dados referentes às cidades em que se encontram os Cidades.';
+
+ALTER TABLE hcidades ADD CONSTRAINT pk_hcid PRIMARY KEY ( hcid_id, hcid_date_in );
+
+CREATE TABLE hcopas (
+    hcop_id      INTEGER NOT NULL,
+    hcop_edicao  NUMBER(4),
+    hcop_date_in DATE NOT NULL
+);
+
+COMMENT ON TABLE hcopas IS
+    'Esta tabela armazena dados referentes às Copas.';
+
+ALTER TABLE hcopas ADD CONSTRAINT pk_hcop PRIMARY KEY ( hcop_id, hcop_date_in );
+
+CREATE TABLE hescalacoes (
+    hesc_id      INTEGER NOT NULL,
+    hesc_cop_id  INTEGER NOT NULL,
+    hesc_sel_id  INTEGER NOT NULL,
+    hesc_tre_id  INTEGER NOT NULL,
+    hesc_date_in DATE NOT NULL
+);
+
+COMMENT ON TABLE hescalacoes IS
+    'Esta tabela armazena dados referentes às escalações realizadas.';
+
+ALTER TABLE hescalacoes ADD CONSTRAINT pk_hesc PRIMARY KEY ( hesc_id, hesc_date_in );
+
+CREATE TABLE hestadios (
+    hest_id      INTEGER NOT NULL,
+    hest_cid_id  INTEGER NOT NULL,
+    hest_nome    VARCHAR2(100),
+    hest_date_in DATE NOT NULL
+);
+
+COMMENT ON TABLE hestadios IS
+    'Esta tabela armazena dados referentes aos Estádios em que foram disponibilizadas para a realização das partidas.';
+
+ALTER TABLE hestadios ADD CONSTRAINT pk_hest PRIMARY KEY (hest_id, hest_date_in);
+
+CREATE TABLE heventos (
+    heve_id              INTEGER NOT NULL,
+    heve_tempo_decorrido NUMBER(3),
+    heve_descricao       VARCHAR2(200),
+    heve_jog_id          INTEGER NOT NULL,
+    heve_par_id          INTEGER NOT NULL,
+    heve_date_in         DATE NOT NULL
+);
+
+COMMENT ON TABLE heventos IS
+    'Esta tabela armazena dados referentes aos eventos que podem acontecer durante uma partida.';
+
+ALTER TABLE heventos ADD CONSTRAINT pk_heve PRIMARY KEY ( heve_id, heve_date_in );
+
+CREATE TABLE hjogadores (
+    hjog_id      INTEGER NOT NULL,
+    hjog_nome    VARCHAR2(200),
+    hjog_date_in DATE NOT NULL
+);
+
+COMMENT ON TABLE hjogadores IS
+    'Esta tabela armazena dados referentes aos jogadores convocados de uma copa.';
+
+ALTER TABLE hjogadores ADD CONSTRAINT pk_hjog PRIMARY KEY ( hjog_id, hjog_date_in );
+
+CREATE TABLE hpaises (
+    hpai_id      INTEGER NOT NULL,
+    hpai_nome    VARCHAR2(100),
+    hpar_date_in DATE NOT NULL
+);
+
+COMMENT ON TABLE hpaises IS
+    'Esta tabela armazena dados referentes aos países em que se encontra cada país.';
+
+ALTER TABLE hpaises ADD CONSTRAINT pk_hpai PRIMARY KEY ( hpai_id, hpar_date_in );
+
+CREATE TABLE hpartidas (
+    hpar_id                   INTEGER NOT NULL,
+    hpar_data                 DATE,
+    hpar_publico              INTEGER,
+    hpar_fase                 VARCHAR2(100),
+    hpar_condicoes_de_vitoria VARCHAR2(100),
+    hpar_cop_id               INTEGER NOT NULL,
+    hpar_esc_id_a             INTEGER NOT NULL,
+    hpar_esc_id_b             INTEGER NOT NULL,
+    hpar_est_id               INTEGER NOT NULL,
+    hpar_date_in              DATE NOT NULL
+);
+
+COMMENT ON TABLE hpartidas IS
+    'Essa tabela armazena dados referentes a uma partida disputada durante a copa.';
+
+ALTER TABLE hpartidas ADD CONSTRAINT pk_hpar PRIMARY KEY ( hpar_id, hpar_date_in );
+
+CREATE TABLE hselecoes (
+    hsel_id       INTEGER NOT NULL,
+    hsel_nome     VARCHAR2(100),
+    hsel_trigrama CHAR(3),
+    hsel_date_in  DATE NOT NULL
+);
+
+COMMENT ON TABLE hselecoes IS
+    'Esta tabela armazena dados referentes às seleções participantes.';
+
+ALTER TABLE hselecoes ADD CONSTRAINT pk_hsel PRIMARY KEY ( hsel_id, hsel_date_in );
+
+CREATE TABLE htreinadores (
+    htre_id      INTEGER NOT NULL,
+    htre_nome    VARCHAR2(200),
+    htre_date_in DATE NOT NULL
+);
+
+COMMENT ON TABLE htreinadores IS
+    'Esta tabela armazena dados referentes aos Treinadores.';
+
+ALTER TABLE htreinadores ADD CONSTRAINT pk_htre PRIMARY KEY ( htre_id, htre_date_in );
+
+
+---------------------------------------------------------------------------------------------
+
+-------------------------------------------- PROCEDURES -------------------------------------
+
+
+
+CREATE PROCEDURE PR_HEVE(EVE_ID INTEGER, EVE_TEMPO_DECORRIDO NUMBER, EVE_DESCRICAO VARCHAR, EVE_JOG_ID INTEGER, EVE_PAR_ID INTEGER)
+AS
+BEGIN
+    INSERT INTO HEVENTOS VALUES (EVE_ID, EVE_TEMPO_DECORRIDO, EVE_DESCRICAO, EVE_JOG_ID, EVE_PAR_ID, SYSDATE);
+END;
+/
+
+CREATE PROCEDURE PR_HPAR(PAR_ID INTEGER, DATA DATE, PAR_PUBLICO INTEGER, PAR_FASE VARCHAR, PAR_CONDICOES_DE_VITORIA VARCHAR, PAR_COP_ID INTEGER, PAR_ESC_ID_A INTEGER, PAR_ESC_ID_B INTEGER, PAR_EST_ID INTEGER)
+AS
+BEGIN
+    INSERT INTO HPARTIDAS VALUES (PAR_ID, DATA, PAR_PUBLICO, PAR_FASE, PAR_CONDICOES_DE_VITORIA, PAR_COP_ID, PAR_ESC_ID_A, PAR_ESC_ID_B, PAR_EST_ID, SYSDATE);
+END;
+/
+
+CREATE PROCEDURE PR_HJOG(JOG_ID INTEGER, JOG_NOME VARCHAR)
+AS
+BEGIN
+    INSERT INTO HJOGADORES VALUES (JOG_ID, JOG_NOME, SYSDATE);
+END;
+/
+
+CREATE PROCEDURE PR_HESC(ESC_ID INTEGER, ESC_COP_ID INTEGER, ESC_SEL_ID INTEGER, ESC_TRE_ID INTEGER)
+AS
+BEGIN
+    INSERT INTO HESCALACOES VALUES (ESC_ID, ESC_COP_ID, ESC_SEL_ID, ESC_TRE_ID, SYSDATE);
+END;
+/
+
+CREATE PROCEDURE PR_HTRE(TRE_ID INTEGER, TRE_NOME VARCHAR)
+AS
+BEGIN
+    INSERT INTO HTREINADORES VALUES (TRE_ID, TRE_NOME, SYSDATE);
+END;
+/
+
+CREATE PROCEDURE PR_HEST(EST_ID INTEGER, EST_CID_ID INTEGER, EST_NOME VARCHAR)
+AS
+BEGIN
+    INSERT INTO HESTADIOS VALUES (EST_ID, EST_CID_ID, EST_NOME, SYSDATE);
+END;
+/
+
+CREATE PROCEDURE PR_HCOP(COP_ID INTEGER, COP_EDICAO NUMBER)
+AS
+BEGIN
+    INSERT INTO HCOPAS VALUES (COP_ID, COP_EDICAO, SYSDATE);
+END;
+/
+
+CREATE PROCEDURE PR_HSEL(SEL_ID INTEGER, SEL_NOME VARCHAR, SEL_TRIGRAMA CHAR)
+AS
+BEGIN
+    INSERT INTO HSELECOES VALUES (SEL_ID, SEL_NOME, SEL_TRIGRAMA, SYSDATE);
+END;
+/
+
+CREATE PROCEDURE PR_HCID(CID_ID INTEGER, CID_NOME VARCHAR)
+AS
+BEGIN
+    INSERT INTO HCIDADES VALUES (CID_ID, CID_NOME, SYSDATE);
+END;
+/
+------------------------------------------------------------------------------------------------
+
+-------------------------------------------- TRIGGERS ------------------------------------------
+
+CREATE TRIGGER TG_AUD_PAR
+AFTER UPDATE OR DELETE ON PARTIDAS
+FOR EACH ROW
+BEGIN
+    PR_HPAR(:OLD.PAR_ID, :OLD.PAR_DATA, :OLD.PAR_PUBLICO, :OLD.PAR_FASE, :OLD.PAR_CONDICOES_DE_VITORIA, :OLD.PAR_COP_ID, :OLD.PAR_ESC_ID_A, :OLD.PAR_ESC_ID_B, :OLD.PAR_EST_ID);
+END;
+/
+
+CREATE TRIGGER TG_AUD_EVE
+AFTER UPDATE OR DELETE ON EVENTOS
+FOR EACH ROW
+BEGIN
+    PR_HEVE(:OLD.EVE_ID, :OLD.EVE_TEMPO_DECORRIDO, :OLD.EVE_DESCRICAO, :OLD.EVE_JOG_ID, :OLD.EVE_PAR_ID);
+END;
+/
+
+CREATE TRIGGER TG_AUD_JOG
+AFTER UPDATE OR DELETE ON JOGADORES
+FOR EACH ROW
+BEGIN
+    PR_HJOG(:OLD.JOG_ID, :OLD.JOG_NOME);
+END;
+/
+
+CREATE TRIGGER TG_AUD_ESC
+AFTER UPDATE OR DELETE ON ESCALACOES
+FOR EACH ROW
+BEGIN
+    PR_HESC(:OLD.ESC_ID, :OLD.ESC_COP_ID, :OLD.ESC_SEL_ID, :OLD.ESC_TRE_ID);
+END;
+/
+
+CREATE TRIGGER TG_AUD_TRE
+AFTER UPDATE OR DELETE ON TREINADORES
+FOR EACH ROW
+BEGIN
+    PR_HTRE(:OLD.TRE_ID, :OLD.TRE_NOME);
+END;
+/
+
+CREATE TRIGGER TG_AUD_EST
+AFTER UPDATE OR DELETE ON ESTADIOS
+FOR EACH ROW
+BEGIN
+    PR_HEST(:OLD.EST_ID, :OLD.EST_CID_ID, :OLD.EST_NOME);
+END;
+/
+
+CREATE TRIGGER TG_AUD_COP
+AFTER UPDATE OR DELETE ON COPAS
+FOR EACH ROW
+BEGIN
+    PR_HCOP(:OLD.COP_ID, :OLD.COP_EDICAO);
+END;
+/
+
+CREATE TRIGGER TG_AUD_SEL
+AFTER UPDATE OR DELETE ON SELECOES
+FOR EACH ROW
+BEGIN
+    PR_HSEL(:OLD.SEL_ID, :OLD.SEL_NOME, :OLD.SEL_TRIGRAMA);
+END;
+/
+
+CREATE TRIGGER TG_AUD_CID
+AFTER UPDATE OR DELETE ON CIDADES
+FOR EACH ROW
+BEGIN
+    PR_HCID(:OLD.CID_ID, :OLD.CID_NOME);
+END;
+/
+
+---------------------------------------------------------------------------------------------
 

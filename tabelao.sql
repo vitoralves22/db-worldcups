@@ -15,7 +15,7 @@ CREATE TABLE tabelao (
 
 INSERT INTO TABELAO VALUES ('2014','17 Jun 2014 - 13:00','Group H','Estadio Mineirao','Belo Horizonte','Belgium','Algeria','','56800','300186479','BEL','ALG');
 INSERT INTO TABELAO VALUES ('2014','14 Jun 2014 - 13:00','Group C','Estadio Mineirao','Belo Horizonte','Colombia','Greece','','57174','300186471','COL','GRE');
-INSERT INTO TABELAO VALUES ('2014','21 Jun 2014 - 13:00','Group F','Estadio Mineirao','Belo Horizonte','Argentina','IR Iran','','57698','300186466','ARG','IRN');
+INSERT INTO TABELAO VALUES ('2014','21 Jun 2014 - 13:00','Group F','Estadio Mineirao','Belo Horizonte','Argentina','Iran','','57698','300186466','ARG','IRN');
 INSERT INTO TABELAO VALUES ('2014','24 Jun 2014 - 13:00','Group D','Estadio Mineirao','Belo Horizonte','Costa Rica','England','','57823','300186484','CRC','ENG');
 INSERT INTO TABELAO VALUES ('2014','28 Jun 2014 - 13:00','Round of 16','Estadio Mineirao','Belo Horizonte','Brazil','Chile','Brazil win on penalties (3 - 2) ','57714','300186487','BRA','CHI');
 INSERT INTO TABELAO VALUES ('2014','08 Jul 2014 - 17:00','Semi-finals','Estadio Mineirao','Belo Horizonte','Brazil','Germany','','58141','300186474','BRA','GER');
@@ -58,7 +58,7 @@ INSERT INTO TABELAO VALUES ('2014','17 Jun 2014 - 18:00','Group H','Arena Pantan
 INSERT INTO TABELAO VALUES ('2014','13 Jun 2014 - 18:00','Group B','Arena Pantanal','Cuiaba','Chile','Australia','','40275','300186473','CHI','AUS');
 INSERT INTO TABELAO VALUES ('2014','24 Jun 2014 - 16:00','Group C','Arena Pantanal','Cuiaba','Japan','Colombia','','40340','300186457','JPN','COL');
 INSERT INTO TABELAO VALUES ('2014','21 Jun 2014 - 18:00','Group F','Arena Pantanal','Cuiaba','Nigeria','Bosnia and Herzegovina','','40499','300186511','NGA','BIH');
-INSERT INTO TABELAO VALUES ('2014','16 Jun 2014 - 16:00','Group F','Arena da Baixada','Curitiba','IR Iran','Nigeria','','39081','300186505','IRN','NGA');
+INSERT INTO TABELAO VALUES ('2014','16 Jun 2014 - 16:00','Group F','Arena da Baixada','Curitiba','Iran','Nigeria','','39081','300186505','IRN','NGA');
 INSERT INTO TABELAO VALUES ('2014','20 Jun 2014 - 19:00','Group E','Arena da Baixada','Curitiba','Honduras','Ecuador','','39224','300186463','HON','ECU');
 INSERT INTO TABELAO VALUES ('2014','26 Jun 2014 - 17:00','Group H','Arena da Baixada','Curitiba','Algeria','Russia','','39311','300186506','ALG','RUS');
 INSERT INTO TABELAO VALUES ('2014','23 Jun 2014 - 13:00','Group B','Arena da Baixada','Curitiba','Australia','Spain','','39375','300186467','AUS','ESP');
@@ -91,7 +91,7 @@ INSERT INTO TABELAO VALUES ('2014','04 Jul 2014 - 17:00','Quarter-finals','Estad
 INSERT INTO TABELAO VALUES ('2006','10 Jun 2006 - 15:00','Group B','FIFA World Cup Stadium, Frankfurt','Frankfurt/Main','England','Paraguay','','48000','97410003','ENG','PAR');
 INSERT INTO TABELAO VALUES ('2006','13 Jun 2006 - 15:00','Group G','FIFA World Cup Stadium, Frankfurt','Frankfurt/Main','Korea Republic','Togo','','48000','97410014','KOR','TOG');
 INSERT INTO TABELAO VALUES ('2006','21 Jun 2006 - 21:00','Group C','FIFA World Cup Stadium, Frankfurt','Frankfurt/Main','Netherlands','Argentina','','48000','97410037','NED','ARG');
-INSERT INTO TABELAO VALUES ('2006','17 Jun 2006 - 15:00','Group D','FIFA World Cup Stadium, Frankfurt','Frankfurt/Main','Portugal','IR Iran','','48000','97410024','POR','IRN');
+INSERT INTO TABELAO VALUES ('2006','17 Jun 2006 - 15:00','Group D','FIFA World Cup Stadium, Frankfurt','Frankfurt/Main','Portugal','Iran','','48000','97410024','POR','IRN');
 INSERT INTO TABELAO VALUES ('2006','01 Jul 2006 - 21:00','Quarter-finals','FIFA World Cup Stadium, Frankfurt','Frankfurt/Main','Brazil','France','','48000','97410060','BRA','FRA');
 INSERT INTO TABELAO VALUES ('2006','16 Jun 2006 - 15:00','Group C','FIFA World Cup Stadium, Gelsenkirchen','Gelsenkirchen','Argentina','Serbia and Montenegro','','52000','97410021','ARG','SCG');
 INSERT INTO TABELAO VALUES ('2006','09 Jun 2006 - 21:00','Group A','FIFA World Cup Stadium, Gelsenkirchen','Gelsenkirchen','Poland','Ecuador','','52000','97410002','POL','ECU');
@@ -283,7 +283,7 @@ INSERT INTO TABELAO VALUES ('2002','06 Jun 2002 - 18:00','Group E','Saitama Stad
 INSERT INTO TABELAO VALUES ('2002','02 Jun 2002 - 18:30','Group F','Saitama Stadium 2002','Saitama','England','Sweden','','52721','43950005','ENG','SWE');
 INSERT INTO TABELAO VALUES ('2002','04 Jun 2002 - 18:00','Group H','Saitama Stadium 2002','Saitama','Japan','Belgium','','55256','43950013','JPN','BEL');
 INSERT INTO TABELAO VALUES ('2002','26 Jun 2002 - 20:30','Semi-finals','Saitama Stadium 2002','Saitama','Brazil','Turkey','','61058','43950062','BRA','TUR');
-INSERT INTO TABELAO VALUES ('2014','25 Jun 2014 - 13:00','Group F','Arena Fonte Nova','Salvador','Bosnia and Herzegovina','IR Iran','','48011','300186464','BIH','IRN');
+INSERT INTO TABELAO VALUES ('2014','25 Jun 2014 - 13:00','Group F','Arena Fonte Nova','Salvador','Bosnia and Herzegovina','Iran','','48011','300186464','BIH','IRN');
 INSERT INTO TABELAO VALUES ('2014','13 Jun 2014 - 16:00','Group B','Arena Fonte Nova','Salvador','Spain','Netherlands','','48173','300186510','ESP','NED');
 INSERT INTO TABELAO VALUES ('2014','20 Jun 2014 - 16:00','Group E','Arena Fonte Nova','Salvador','Switzerland','France','','51003','300186514','SUI','FRA');
 INSERT INTO TABELAO VALUES ('2014','16 Jun 2014 - 13:00','Group G','Arena Fonte Nova','Salvador','Germany','Portugal','','51081','300186475','GER','POR');

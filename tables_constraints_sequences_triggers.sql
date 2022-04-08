@@ -1,7 +1,7 @@
 CREATE TABLE cidades (
     cid_id     INTEGER NOT NULL,
-    cid_pai_id INTEGER NOT NULL,
-    cid_nome   VARCHAR2(100)
+    cid_nome   VARCHAR2(100),
+    cid_pai_id INTEGER NOT NULL
 );
 
 COMMENT ON TABLE cidades IS
@@ -55,8 +55,8 @@ COMMENT ON COLUMN escalacoes.esc_tre_id IS
 
 CREATE TABLE estadios (
     est_id     INTEGER NOT NULL,
-    est_cid_id INTEGER NOT NULL,
-    est_nome   VARCHAR2(100)
+    est_nome   VARCHAR2(100),
+    est_cid_id INTEGER NOT NULL
 );
 
 COMMENT ON TABLE estadios IS
@@ -113,8 +113,8 @@ COMMENT ON COLUMN jogadores.jog_nome IS
 
 CREATE TABLE jogadores_escalacoes (
     jsc_jog_id        INTEGER NOT NULL,
-    jsc_esc_id        INTEGER NOT NULL,
-    jsc_numero_camisa VARCHAR2(2)
+    jsc_numero_camisa VARCHAR2(2),
+    jsc_esc_id        INTEGER NOT NULL
 );
 
 COMMENT ON TABLE jogadores_escalacoes IS

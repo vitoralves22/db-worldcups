@@ -1,17 +1,13 @@
 CREATE TABLE cidades (
     cid_id     INTEGER NOT NULL,
-    cid_nome   VARCHAR2(100),
-    cid_pai_id INTEGER NOT NULL
+    cid_nome   VARCHAR2(100)
 );
-
+/
 COMMENT ON TABLE cidades IS
     'Esta tabela armazena dados referentes às cidades em que se encontram os Cidades.';
 
 COMMENT ON COLUMN cidades.cid_id IS
     'Chave primária da tabela  CIDADES.';
-
-COMMENT ON COLUMN cidades.cid_pai_id IS
-    'Esta coluna faz referência à tabela Países, indicando à qual país esta cidade pertence.';
 
 COMMENT ON COLUMN cidades.cid_nome IS
     'Esta coluna armazena o nome da cidade.';
@@ -32,7 +28,6 @@ COMMENT ON COLUMN copas.cop_edicao IS
 
 CREATE TABLE escalacoes (
     esc_id     INTEGER NOT NULL,
-    esc_cop_id INTEGER NOT NULL,
     esc_sel_id INTEGER NOT NULL,
     esc_tre_id INTEGER NOT NULL
 );
@@ -42,9 +37,6 @@ COMMENT ON TABLE escalacoes IS
 
 COMMENT ON COLUMN escalacoes.esc_id IS
     'chave primária da tabela ESCALACOES.';
-
-COMMENT ON COLUMN escalacoes.esc_cop_id IS
-    'Esta coluna faz referência à tabela Copas, indicando para qual edição da copa essa escalação foi designada.';
 
 COMMENT ON COLUMN escalacoes.esc_sel_id IS
     'Esta coluna faz referência à tabela Selecoes, indicando a qual seleção essa escalação pertence.';
@@ -65,12 +57,12 @@ COMMENT ON TABLE estadios IS
 COMMENT ON COLUMN estadios.est_id IS
     'Chave primária da tabela ESTADIOS.';
 
-COMMENT ON COLUMN estadios.est_cid_id IS
-    'Esta coluna faz referência à tabela Cidade, indicando em qual cidade o estádio está localizado.';
-
 COMMENT ON COLUMN estadios.est_nome IS
     'Esta coluna armazena o nome do estádio.';
 
+COMMENT ON COLUMN estadios.est_cid_id IS
+    'Esta coluna faz referência à tabela Cidade, indicando em qual cidade o estádio está localizado.';
+    
 CREATE TABLE eventos (
     eve_id              INTEGER NOT NULL,
     eve_tempo_decorrido NUMBER(3),
@@ -99,7 +91,8 @@ COMMENT ON COLUMN eventos.eve_par_id IS
 
 CREATE TABLE jogadores (
     jog_id   INTEGER NOT NULL,
-    jog_nome VARCHAR2(200)
+    jog_nome VARCHAR2(200),
+    jog_data_nascimento DATE
 );
 
 COMMENT ON TABLE jogadores IS
@@ -111,10 +104,13 @@ COMMENT ON COLUMN jogadores.jog_id IS
 COMMENT ON COLUMN jogadores.jog_nome IS
     'Esta coluna armazena o nome do jogador.';
 
+COMMENT ON COLUMN jogadores.jog_data_nascimento IS
+    'Esta coluna armazena a data de nascimento do jogador.';
+
 CREATE TABLE jogadores_escalacoes (
     jsc_jog_id        INTEGER NOT NULL,
-    jsc_numero_camisa VARCHAR2(2),
-    jsc_esc_id        INTEGER NOT NULL
+    jsc_esc_id        INTEGER NOT NULL,
+    jsc_numero_camisa VARCHAR2(2)
 );
 
 COMMENT ON TABLE jogadores_escalacoes IS
@@ -128,20 +124,6 @@ COMMENT ON COLUMN jogadores_escalacoes.jsc_esc_id IS
 
 COMMENT ON COLUMN jogadores_escalacoes.jsc_numero_camisa IS
     'Esta coluna armazena o número da camisa de jogador em uma determinada escalação.';                                                             
-
-CREATE TABLE paises (
-    pai_id   INTEGER NOT NULL,
-    pai_nome VARCHAR2(100)
-);
-
-COMMENT ON TABLE paises IS
-    'Esta tabela armazena dados referentes aos países em que se encontra cada país.';
-
-COMMENT ON COLUMN paises.pai_id IS
-    'Chave primária da tabela  PAISES.';
-
-COMMENT ON COLUMN paises.pai_nome IS
-    'Esta coluna armazena o nome do país.';
 
 CREATE TABLE partidas (
     par_id                   INTEGER NOT NULL,
@@ -232,8 +214,6 @@ ALTER TABLE jogadores ADD CONSTRAINT pk_jog PRIMARY KEY ( jog_id );
 
 ALTER TABLE jogadores_escalacoes ADD CONSTRAINT pk_jsc PRIMARY KEY ( jsc_jog_id, jsc_esc_id );
 
-ALTER TABLE paises ADD CONSTRAINT pk_pai PRIMARY KEY ( pai_id );
-
 ALTER TABLE partidas ADD CONSTRAINT pk_par PRIMARY KEY ( par_id );
 
 ALTER TABLE selecoes ADD CONSTRAINT pk_sel PRIMARY KEY ( sel_id );
@@ -242,10 +222,6 @@ ALTER TABLE treinadores ADD CONSTRAINT pk_tre PRIMARY KEY ( tre_id );
 ------------------------------------------------------------------------------------------------
 
 ------------------------------------------FOREIGN KEYS------------------------------------------
-ALTER TABLE cidades ADD CONSTRAINT fk_cid_pai FOREIGN KEY ( cid_pai_id ) REFERENCES paises ( pai_id );
-
-ALTER TABLE escalacoes ADD CONSTRAINT fk_esc_cop FOREIGN KEY ( esc_cop_id ) REFERENCES copas ( cop_id );
-
 ALTER TABLE escalacoes ADD CONSTRAINT fk_esc_sel FOREIGN KEY ( esc_sel_id ) REFERENCES selecoes ( sel_id );
 
 ALTER TABLE escalacoes ADD CONSTRAINT fk_esc_tre FOREIGN KEY ( esc_tre_id ) REFERENCES treinadores ( tre_id );
@@ -282,8 +258,6 @@ CREATE SEQUENCE seq_est NOCACHE;
 CREATE SEQUENCE seq_eve NOCACHE;
 
 CREATE SEQUENCE seq_jog NOCACHE;
-
-CREATE SEQUENCE seq_pai NOCACHE;
 
 CREATE SEQUENCE seq_par NOCACHE;
 
@@ -347,14 +321,6 @@ BEFORE INSERT ON jogadores
 FOR EACH ROW 
 BEGIN 
     :NEW.jog_id := seq_jog.nextval; 
-end;
-/
- 
-CREATE TRIGGER tg_bi_pai 
-BEFORE INSERT ON paises 
-FOR EACH ROW 
-BEGIN 
-    :NEW.pai_id := seq_pai.nextval; 
 end;
 /
  
@@ -422,7 +388,6 @@ ALTER TABLE hcopas ADD CONSTRAINT pk_hcop PRIMARY KEY ( hcop_id, hcop_date_in );
 
 CREATE TABLE hescalacoes (
     hesc_id      INTEGER NOT NULL,
-    hesc_cop_id  INTEGER NOT NULL,
     hesc_sel_id  INTEGER NOT NULL,
     hesc_tre_id  INTEGER NOT NULL,
     hesc_date_in DATE NOT NULL
@@ -469,17 +434,6 @@ COMMENT ON TABLE hjogadores IS
     'Esta tabela armazena dados referentes aos jogadores convocados de uma copa.';
 
 ALTER TABLE hjogadores ADD CONSTRAINT pk_hjog PRIMARY KEY ( hjog_id, hjog_date_in );
-
-CREATE TABLE hpaises (
-    hpai_id      INTEGER NOT NULL,
-    hpai_nome    VARCHAR2(100),
-    hpar_date_in DATE NOT NULL
-);
-
-COMMENT ON TABLE hpaises IS
-    'Esta tabela armazena dados referentes aos países em que se encontra cada país.';
-
-ALTER TABLE hpaises ADD CONSTRAINT pk_hpai PRIMARY KEY ( hpai_id, hpar_date_in );
 
 CREATE TABLE hpartidas (
     hpar_id                   INTEGER NOT NULL,
@@ -550,10 +504,10 @@ BEGIN
 END;
 /
 
-CREATE PROCEDURE PR_HESC(ESC_ID INTEGER, ESC_COP_ID INTEGER, ESC_SEL_ID INTEGER, ESC_TRE_ID INTEGER)
+CREATE PROCEDURE PR_HESC(ESC_ID INTEGER, ESC_SEL_ID INTEGER, ESC_TRE_ID INTEGER)
 AS
 BEGIN
-    INSERT INTO HESCALACOES VALUES (ESC_ID, ESC_COP_ID, ESC_SEL_ID, ESC_TRE_ID, SYSDATE);
+    INSERT INTO HESCALACOES VALUES (ESC_ID, ESC_SEL_ID, ESC_TRE_ID, SYSDATE);
 END;
 /
 
@@ -623,7 +577,7 @@ CREATE TRIGGER TG_AUD_ESC
 AFTER UPDATE OR DELETE ON ESCALACOES
 FOR EACH ROW
 BEGIN
-    PR_HESC(:OLD.ESC_ID, :OLD.ESC_COP_ID, :OLD.ESC_SEL_ID, :OLD.ESC_TRE_ID);
+    PR_HESC(:OLD.ESC_ID, :OLD.ESC_SEL_ID, :OLD.ESC_TRE_ID);
 END;
 /
 
@@ -668,4 +622,5 @@ END;
 /
 
 ---------------------------------------------------------------------------------------------
+
 

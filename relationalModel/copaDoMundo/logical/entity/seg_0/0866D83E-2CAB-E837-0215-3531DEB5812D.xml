@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0866D83E-2CAB-E837-0215-3531DEB5812D" name="Copas">
 <createdBy>kauan</createdBy>
 <createdTime>2022-03-11 15:50:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[Esta tabela armazena dados referentes às Copas]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Esta tabela armazena dados referentes às Copas.]]></commentInRDBMS>
 <generatorID>DCE88ED6-EE05-7083-3AEB-9DB14AF32689</generatorID>
 <ownerDesignName>copaDoMundo</ownerDesignName>
 <engineerTo>
@@ -20,7 +20,7 @@
 <Attribute name="cop id" id="F7AD6D28-0982-6CAA-7A8C-276277175C99">
 <createdBy>kauan</createdBy>
 <createdTime>2022-03-11 15:50:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[Chave primária da tabela do Copas]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Chave primária da tabela COPAS.]]></commentInRDBMS>
 <generatorID>1F71A029-67B6-6DAC-8CF8-A50952EB6B60</generatorID>
 <ownerDesignName>copaDoMundo</ownerDesignName>
 <engineerTo>
@@ -31,10 +31,11 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="cop ano" id="F2B26CA9-EA93-EC29-1FE7-38B129B4E50C">
+<Attribute name="cop edicao" id="F2B26CA9-EA93-EC29-1FE7-38B129B4E50C">
 <createdBy>kauan</createdBy>
 <createdTime>2022-03-11 15:50:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[Data da copa]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Esta coluna armazena o ano de realização da copa.
+]]></commentInRDBMS>
 <generatorID>A691F6CC-6C2C-E56A-267C-0263D67C609C</generatorID>
 <ownerDesignName>copaDoMundo</ownerDesignName>
 <engineerTo>
@@ -43,8 +44,9 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

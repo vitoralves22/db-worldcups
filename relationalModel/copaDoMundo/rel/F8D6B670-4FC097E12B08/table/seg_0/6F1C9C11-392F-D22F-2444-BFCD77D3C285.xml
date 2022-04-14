@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6F1C9C11-392F-D22F-2444-BFCD77D3C285" name="HJogadores_escalacoes">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-08 22:36:33 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<ordsAlias>table_22</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="hjsc_jog_id" id="5B772216-70AF-F839-49CD-59D4AD57B0B9">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-08 22:38:44 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hjsc_esc_id" id="3CD9D86C-30BA-7EE3-45AE-85CD72FCCF94">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-08 22:38:44 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hjsc_numero_camisa" id="CB79B88F-1138-88C5-DB9C-081CE425E240">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-08 22:38:44 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="002C1E84-F43C-7872-B305-67D8D70D6E46" name="PK_hjsc">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-08 22:45:26 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B772216-70AF-F839-49CD-59D4AD57B0B9"/>
+<colUsage columnID="3CD9D86C-30BA-7EE3-45AE-85CD72FCCF94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

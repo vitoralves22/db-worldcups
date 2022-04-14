@@ -20,7 +20,7 @@
 <Attribute name="eve id" id="67658732-A1EF-E9BC-0F6C-28521DC2A055">
 <createdBy>kauan</createdBy>
 <createdTime>2022-03-11 15:50:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[Chave primária da tabela do Eventos]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Chave primária da tabela  EVENTOS.]]></commentInRDBMS>
 <generatorID>5053E3A6-8D4E-093C-5F7D-1AD0919EDBCA</generatorID>
 <ownerDesignName>copaDoMundo</ownerDesignName>
 <engineerTo>
@@ -31,10 +31,10 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="eve minutos" id="D0434B0B-BEBD-B298-0BE7-8E43869CC4E2">
+<Attribute name="eve tempo decorrido" id="D0434B0B-BEBD-B298-0BE7-8E43869CC4E2">
 <createdBy>kauan</createdBy>
 <createdTime>2022-03-11 15:50:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[Momento do acontecimento do evento em minutos]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Esta coluna armazena a marcação de tempo de partida no momento do acontecimento do evento (em minutos).]]></commentInRDBMS>
 <generatorID>CEDCB87D-E47A-0806-AFB1-CE38DC74541A</generatorID>
 <ownerDesignName>copaDoMundo</ownerDesignName>
 <engineerTo>
@@ -43,13 +43,14 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT015</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="eve descricao" id="411385E2-F7B5-DD0F-7459-3DD7A38CE249">
 <createdBy>kauan</createdBy>
 <createdTime>2022-03-11 15:50:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[Descrição do evento (cartões, faltas, gols, substituições etc).]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Descrição do evento (cartões, faltas, gols, substituições etc.).]]></commentInRDBMS>
 <generatorID>2CE540A5-9912-9D14-82B5-0F0E87D1AC7F</generatorID>
 <ownerDesignName>copaDoMundo</ownerDesignName>
 <engineerTo>
@@ -65,7 +66,8 @@
 <Attribute name="eve jog id" id="8F9599D8-7DA0-7CAD-24FF-83D7AEBA70E4">
 <createdBy>kauan</createdBy>
 <createdTime>2022-03-11 15:50:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[Referência o jogador relacionado a este evento.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Esta coluna faz referência à tabela Jogadores, indicando o jogador envolvido no evento.
+]]></commentInRDBMS>
 <generatorID>94B626EE-2D4F-C956-A6B5-4FB6D2F2ECA3</generatorID>
 <ownerDesignName>copaDoMundo</ownerDesignName>
 <engineerTo>
@@ -80,7 +82,8 @@
 <Attribute name="eve par id" id="930B86E0-738B-6EF6-565E-803EAFB03BD3">
 <createdBy>kauan</createdBy>
 <createdTime>2022-03-11 15:50:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[Referência a partida relacionada a este evento.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Esta coluna faz referência à tabela Partidas, indicando a partida em que o evento ocorreu.
+]]></commentInRDBMS>
 <generatorID>95DE1EE1-B427-0599-5CCE-7E7996253E58</generatorID>
 <ownerDesignName>copaDoMundo</ownerDesignName>
 <engineerTo>

@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="Cidades" directorySegmentName="seg_0" id="43ACD32E-475B-200C-4CDC-95C6882CDDC4">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:35:05 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="cid_nome" id="1FA88E9C-2A8D-75CC-B787-C4AB2A3EF992">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:35:05 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cid_id" id="AD199230-A538-596C-0F1A-714C8BD20E18">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:35:05 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_cid" id="E00AD379-139B-37B2-7F45-59201D677704">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:35:05 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

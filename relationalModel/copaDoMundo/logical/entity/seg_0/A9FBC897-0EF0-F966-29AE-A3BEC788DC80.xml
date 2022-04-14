@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A9FBC897-0EF0-F966-29AE-A3BEC788DC80" name="Jogadores escalacoes">
 <createdBy>kauan</createdBy>
 <createdTime>2022-03-11 15:50:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[Esta tabela armazena dados referentes à escalação dos jogadores]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Esta tabela armazena dados referentes à escalação dos jogadores.]]></commentInRDBMS>
 <generatorID>29ACD914-E4F7-30B1-9120-0C437D44A3D3</generatorID>
 <ownerDesignName>copaDoMundo</ownerDesignName>
 <engineerTo>
@@ -20,7 +20,8 @@
 <Attribute name="jsc jog id" id="EB9FB15B-AAE4-C8D9-B934-8B75B9C2B08D">
 <createdBy>kauan</createdBy>
 <createdTime>2022-03-11 15:50:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[Referência ao jogador que está sendo escalado]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Esta coluna faz referência à tabela Jogadores, indicando o jogador escalado.
+]]></commentInRDBMS>
 <generatorID>CC4D125A-3B4A-DBD0-D7AF-C373830F35DB</generatorID>
 <ownerDesignName>copaDoMundo</ownerDesignName>
 <engineerTo>
@@ -35,7 +36,8 @@
 <Attribute name="jsc esc id" id="ABD0A31C-BF74-18F1-0F93-CD0D1B23C032">
 <createdBy>kauan</createdBy>
 <createdTime>2022-03-11 15:50:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[Referência a escalação que o jogador faz parte]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Esta coluna faz referência à tabela Escalacoes, indicando a escalação da qual o jogador faz parte.
+]]></commentInRDBMS>
 <generatorID>53E02F2E-77CF-A97B-5A7A-B3D89AAC1859</generatorID>
 <ownerDesignName>copaDoMundo</ownerDesignName>
 <engineerTo>
@@ -50,7 +52,8 @@
 <Attribute name="jsc numero camisa" id="922B8B8C-4CC4-334B-A0F2-77D800C8E826">
 <createdBy>kauan</createdBy>
 <createdTime>2022-03-11 15:50:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[Número da camisa de cada jogador por escalação]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Esta coluna armazena o número da camisa de jogador em uma determinada escalação.
+]]></commentInRDBMS>
 <generatorID>7B1BD061-1177-5348-0149-A5FA1A90E28E</generatorID>
 <ownerDesignName>copaDoMundo</ownerDesignName>
 <engineerTo>
@@ -59,7 +62,7 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
+<logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>2</dataTypeSize>
 <ownDataTypeParameters>2,,</ownDataTypeParameters>
 </Attribute>

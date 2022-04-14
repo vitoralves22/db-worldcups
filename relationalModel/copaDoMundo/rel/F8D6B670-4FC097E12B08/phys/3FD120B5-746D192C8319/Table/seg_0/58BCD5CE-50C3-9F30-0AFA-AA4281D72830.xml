@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="HPartidas" directorySegmentName="seg_0" id="58BCD5CE-50C3-9F30-0AFA-AA4281D72830">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:35:05 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="hpar_id" id="0409F570-EB80-0331-8ADF-AAC1D8A53669">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:35:05 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="hpar_cop_id" id="10793738-9EF1-7814-3E97-AC356DD93282">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:35:05 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="hpar_fase" id="3BECAE64-9DD6-67C6-4601-B482B1407479">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:35:05 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="hpar_condicoes_de_vitoria" id="5E347DC6-1A55-C536-EE69-D55218893D02">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:35:05 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="hpar_date_in" id="5F65C724-3613-17A4-1837-2B8754222180">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:35:05 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="hpar_esc_id_A" id="92073020-D889-9A4E-4C0F-F164AF8EB4FC">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:35:05 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="hpar_publico" id="B78F64A5-766F-73F2-830E-51C238A2985D">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:35:05 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="hpar_data" id="CC5CAE34-EB7B-2B47-09AB-27CE78642066">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:35:05 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="hpar_esc_id_B" id="D42C715D-2A2D-D215-8667-7D986B5F4A89">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:35:05 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="hpar_est_id" id="DCD58628-DFBB-8177-1F5B-6C42C5E235F6">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:35:05 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_hpar" id="DDDC7C4F-778A-5421-F0F4-88F605BBAC9C">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:35:05 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

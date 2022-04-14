@@ -21,21 +21,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="esc_cop_id" id="FA22C819-EC5E-CDBF-7EC7-1C89C199F45A">
-<createdBy>kauan</createdBy>
-<createdTime>2022-02-25 22:34:06 UTC</createdTime>
-<commentInRDBMS><![CDATA[Esta coluna faz referência à tabela Copas, indicando para qual edição da copa essa escalação foi designada.
-]]></commentInRDBMS>
-<ownerDesignName>copaDoMundo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="D1573FAD-0DD8-59C9-989A-A7B1E82C4B30" referredColumn="1F71A029-67B6-6DAC-8CF8-A50952EB6B60"/>
-</associations>
-</Column>
 <Column name="esc_sel_id" id="8EFEAEB8-9050-6C97-B1E3-CC022F01BDF2">
 <createdBy>kauan</createdBy>
 <createdTime>2022-02-25 22:34:06 UTC</createdTime>
@@ -77,16 +62,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="97935CDD-FDC7-4479-D8A6-3CE35109FB22"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="4765C372-8EE2-E461-8F92-7C26E63D5F2E" name="FK_esc_cop">
-<createdBy>kauan</createdBy>
-<createdTime>2022-02-25 22:34:06 UTC</createdTime>
-<ownerDesignName>copaDoMundo</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="FA22C819-EC5E-CDBF-7EC7-1C89C199F45A"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="02135447-224C-1913-89E9-53A2A395A364" name="FK_esc_sel">

@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DD807DA4-C60C-A314-B37F-9F487811D523" name="Escalacoes">
 <createdBy>kauan</createdBy>
 <createdTime>2022-03-11 15:50:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[Esta tabela armazena dados referentes às escalações realizadas]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Esta tabela armazena dados referentes às escalações realizadas.]]></commentInRDBMS>
 <generatorID>F941A771-D62E-477C-DA65-9891C1136D5D</generatorID>
 <ownerDesignName>copaDoMundo</ownerDesignName>
 <engineerTo>
@@ -20,7 +20,7 @@
 <Attribute name="esc id" id="293F1FDA-A20D-CBCB-AF0A-9878234C48FD">
 <createdBy>kauan</createdBy>
 <createdTime>2022-03-11 15:50:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[chave primária da tabela do Escalacoes]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[chave primária da tabela ESCALACOES.]]></commentInRDBMS>
 <generatorID>97935CDD-FDC7-4479-D8A6-3CE35109FB22</generatorID>
 <ownerDesignName>copaDoMundo</ownerDesignName>
 <engineerTo>
@@ -49,7 +49,8 @@
 <Attribute name="esc sel id" id="FC5062B4-8269-05C5-A36D-F315DEA9FE11">
 <createdBy>kauan</createdBy>
 <createdTime>2022-03-11 15:50:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[referência a tabela Selecoes, indicando a qual seleção pertence essa escalação]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Esta coluna faz referência à tabela Selecoes, indicando a qual seleção essa escalação pertence.
+]]></commentInRDBMS>
 <generatorID>591601CA-81F7-01C2-2498-541286501889</generatorID>
 <ownerDesignName>copaDoMundo</ownerDesignName>
 <engineerTo>
@@ -64,7 +65,8 @@
 <Attribute name="esc tre id" id="A2076895-FE52-A77F-E94A-614D40C71F8B">
 <createdBy>kauan</createdBy>
 <createdTime>2022-03-11 15:50:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[Referência a tabela Treinadores, indicando qual o treinador pertence a essa escalação. ]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Esta coluna faz referência à tabela Treinadores, indicando quem foi o treinador responsável por essa escalação.
+]]></commentInRDBMS>
 <generatorID>24706A38-DDF7-BAE2-8F85-1F5B0BE2A7F8</generatorID>
 <ownerDesignName>copaDoMundo</ownerDesignName>
 <engineerTo>

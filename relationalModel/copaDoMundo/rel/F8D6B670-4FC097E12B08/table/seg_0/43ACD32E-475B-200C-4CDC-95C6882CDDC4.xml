@@ -21,21 +21,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="cid_pai_id" id="A3EABB71-AA32-EEB9-A598-C7C73C95E925">
-<createdBy>kauan</createdBy>
-<createdTime>2022-02-25 00:37:01 UTC</createdTime>
-<commentInRDBMS><![CDATA[Esta coluna faz referência à tabela Países, indicando à qual país esta cidade pertence.
-]]></commentInRDBMS>
-<ownerDesignName>copaDoMundo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="1AB1C390-BDAA-F869-9575-473D92D132C8" referredColumn="AB162E58-EDF5-BBC3-20AE-6C0E71F17DE4"/>
-</associations>
-</Column>
 <Column name="cid_nome" id="1FA88E9C-2A8D-75CC-B787-C4AB2A3EF992">
 <createdBy>kauan</createdBy>
 <createdTime>2022-02-25 00:43:00 UTC</createdTime>
@@ -61,16 +46,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="AD199230-A538-596C-0F1A-714C8BD20E18"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="B5C1E0FF-8C11-7556-BFD3-EC66C6D71DF7" name="FK_cid_pai">
-<createdBy>kauan</createdBy>
-<createdTime>2022-02-25 02:01:54 UTC</createdTime>
-<ownerDesignName>copaDoMundo</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="A3EABB71-AA32-EEB9-A598-C7C73C95E925"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

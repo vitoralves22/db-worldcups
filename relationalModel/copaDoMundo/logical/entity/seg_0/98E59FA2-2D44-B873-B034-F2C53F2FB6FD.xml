@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="98E59FA2-2D44-B873-B034-F2C53F2FB6FD" name="HEventos">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta tabela armazena dados referentes aos eventos que podem acontecer durante uma partida.]]></commentInRDBMS>
+<generatorID>2F671C4D-96E6-D0F3-8C92-BF90D5ADC4EC</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="heve id" id="F94354AD-D5AC-AEC5-7526-EAE7689C1741">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<generatorID>ABDCAAFC-7390-FB45-5EE8-3FD809C8A575</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="heve tempo decorrido" id="AEF39A48-500E-F9D2-F638-CE4FA50BB3E2">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<generatorID>CBDF58F0-8C00-956E-2BF7-7EF09BE67B25</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="heve descricao" id="343872F8-D409-8EF0-9A8D-70DACBFA68B6">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<generatorID>E4A3FC46-FC3F-35EB-CCFF-B2A97CB08534</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="heve jog id" id="8DA51268-CCE5-6CBA-04AF-0A1A324561F6">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<generatorID>254F913A-87B8-63D4-BBDE-82DC59A4B830</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="heve par id" id="DDA6E25F-F5EC-39F0-FA90-44808A9B6220">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<generatorID>3B16DD4D-3164-CAEF-A1CB-BBEC220CD40E</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="heve date in" id="2E4BEAEE-7846-BBB2-6B71-4B9772414FB5">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<generatorID>1703E6A1-7E41-4F58-F7D4-33849E2C53A3</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CE988AB9-1E09-142A-3204-445D8C42F638" name="PK heve">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<generatorID>FDEBC379-8006-72CC-71E8-E8B91946C3C0</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F94354AD-D5AC-AEC5-7526-EAE7689C1741</attributeRef>
+<attributeRef>2E4BEAEE-7846-BBB2-6B71-4B9772414FB5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

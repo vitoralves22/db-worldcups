@@ -20,16 +20,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="hcid_pai_id" id="90C7E5BE-EB67-D864-1C9B-0BEDCE6A6658">
-<createdBy>kauan</createdBy>
-<createdTime>2022-04-08 01:08:37 UTC</createdTime>
-<ownerDesignName>copaDoMundo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="hcid_nome" id="3C4C562D-FD0D-5F2F-6CE7-500FCBF3F346">
 <createdBy>kauan</createdBy>
 <createdTime>2022-04-08 01:08:37 UTC</createdTime>

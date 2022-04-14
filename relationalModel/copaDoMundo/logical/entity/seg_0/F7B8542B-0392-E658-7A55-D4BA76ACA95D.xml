@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F7B8542B-0392-E658-7A55-D4BA76ACA95D" name="Jogadores">
 <createdBy>kauan</createdBy>
 <createdTime>2022-03-11 15:50:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[Esta tabela armazena dados referentes aos jogadores convocados de uma copa]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Esta tabela armazena dados referentes aos jogadores convocados de uma copa.]]></commentInRDBMS>
 <generatorID>F5F2C981-3CCC-E03B-569B-1E99B83B54AC</generatorID>
 <ownerDesignName>copaDoMundo</ownerDesignName>
 <engineerTo>
@@ -20,7 +20,7 @@
 <Attribute name="jog id" id="130A693B-7ABC-9080-65D7-07BF929973A7">
 <createdBy>kauan</createdBy>
 <createdTime>2022-03-11 15:50:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[Chave primária da tabela do Jogadores]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Chave primária da tabela JOGADORES.]]></commentInRDBMS>
 <generatorID>593C37F3-264E-F51B-EA26-F3F3B0422EB4</generatorID>
 <ownerDesignName>copaDoMundo</ownerDesignName>
 <engineerTo>
@@ -34,7 +34,8 @@
 <Attribute name="jog nome" id="ED41A630-6A1D-3CD1-946D-4AE41FAB234A">
 <createdBy>kauan</createdBy>
 <createdTime>2022-03-11 15:50:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[Nome do jogador]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Esta coluna armazena o nome do jogador.
+]]></commentInRDBMS>
 <generatorID>610EBEAB-DCB7-9003-D941-D0324F9A517E</generatorID>
 <ownerDesignName>copaDoMundo</ownerDesignName>
 <engineerTo>

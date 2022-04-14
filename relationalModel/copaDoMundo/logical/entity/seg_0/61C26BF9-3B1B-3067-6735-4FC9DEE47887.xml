@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="61C26BF9-3B1B-3067-6735-4FC9DEE47887" name="Treinadores">
 <createdBy>kauan</createdBy>
 <createdTime>2022-03-11 15:50:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[Esta tabela armazena dados referentes aos Treinadores]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Esta tabela armazena dados referentes aos Treinadores.]]></commentInRDBMS>
 <generatorID>DC605CAA-CA6F-E1B6-C70F-3301B9DC7695</generatorID>
 <ownerDesignName>copaDoMundo</ownerDesignName>
 <engineerTo>
@@ -20,7 +20,7 @@
 <Attribute name="tre id" id="A3DF84DF-4421-66BE-E7B9-F862C20D2DDF">
 <createdBy>kauan</createdBy>
 <createdTime>2022-03-11 15:50:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[chave primária da tabela do Treinadores]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[chave primária da tabela TREINADORES.]]></commentInRDBMS>
 <generatorID>9FED1F5D-BDE1-C10F-5825-1E90AB6D9648</generatorID>
 <ownerDesignName>copaDoMundo</ownerDesignName>
 <engineerTo>
@@ -34,7 +34,8 @@
 <Attribute name="tre nome" id="AD7AC5CD-2A56-CDFE-52FA-5E9BEF74480B">
 <createdBy>kauan</createdBy>
 <createdTime>2022-03-11 15:50:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[nome do treinador]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Esta coluna armazena o nome do treinador.
+]]></commentInRDBMS>
 <generatorID>D9A9DD30-B5A0-F301-95F7-AA6B093682BA</generatorID>
 <ownerDesignName>copaDoMundo</ownerDesignName>
 <engineerTo>

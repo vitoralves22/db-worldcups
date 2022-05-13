@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="Jogadores" directorySegmentName="seg_0" id="F5F2C981-3CCC-E03B-569B-1E99B83B54AC">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:35:05 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="jog_id" id="593C37F3-264E-F51B-EA26-F3F3B0422EB4">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:35:05 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="jog_nome" id="610EBEAB-DCB7-9003-D941-D0324F9A517E">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:35:05 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_jog" id="424EB99F-5AFA-5694-795F-035AE7710267">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:35:05 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

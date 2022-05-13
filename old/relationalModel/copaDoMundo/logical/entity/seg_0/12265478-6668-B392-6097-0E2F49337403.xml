@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="12265478-6668-B392-6097-0E2F49337403" name="HEstadios">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta tabela armazena dados referentes aos Estádios em que foram disponibilizadas para a realização das partidas.]]></commentInRDBMS>
+<generatorID>9510BA65-F39B-5861-8CF4-6BB9C92E54B6</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="hest id" id="36B5B8C0-BB0E-EAB0-BE5E-0795F74C6BBF">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<generatorID>1F00489A-1861-C62C-784E-7EF35847654D</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hest cid id" id="6C0DBB71-240A-5BEC-9A87-7DBE83E27033">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<generatorID>ACE96A52-D7CC-38AF-B576-3938B7C3A9A8</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hest nome" id="38CF27B7-1FCD-6C02-61F0-D37E762148C3">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<generatorID>82F1EF17-60C2-A77F-4E59-F1AB9174D367</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hest date in" id="B5DD1B44-05FF-6E5E-A9F7-52FA8BCBEA4F">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<generatorID>F48779DD-06BA-E244-DC65-4B548B2B7C9F</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0D4B734B-AA81-5F76-E06C-AAA0BD8BC424" name="PK hest">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<generatorID>693F5F89-973A-B74D-F9A3-FF9A94CB9F36</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>36B5B8C0-BB0E-EAB0-BE5E-0795F74C6BBF</attributeRef>
+<attributeRef>B5DD1B44-05FF-6E5E-A9F7-52FA8BCBEA4F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

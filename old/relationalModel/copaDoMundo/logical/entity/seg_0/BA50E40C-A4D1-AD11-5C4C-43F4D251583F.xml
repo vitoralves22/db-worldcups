@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BA50E40C-A4D1-AD11-5C4C-43F4D251583F" name="Eventos">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta tabela armazena dados referentes aos eventos que podem acontecer durante uma partida.]]></commentInRDBMS>
+<generatorID>394A26B6-3220-2FE6-5441-BB9CA00FF356</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="eve id" id="67658732-A1EF-E9BC-0F6C-28521DC2A055">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave primária da tabela  EVENTOS.]]></commentInRDBMS>
+<generatorID>5053E3A6-8D4E-093C-5F7D-1AD0919EDBCA</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="eve tempo decorrido" id="D0434B0B-BEBD-B298-0BE7-8E43869CC4E2">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna armazena a marcação de tempo de partida no momento do acontecimento do evento (em minutos).]]></commentInRDBMS>
+<generatorID>CEDCB87D-E47A-0806-AFB1-CE38DC74541A</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="eve descricao" id="411385E2-F7B5-DD0F-7459-3DD7A38CE249">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do evento (cartões, faltas, gols, substituições etc.).]]></commentInRDBMS>
+<generatorID>2CE540A5-9912-9D14-82B5-0F0E87D1AC7F</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="eve jog id" id="8F9599D8-7DA0-7CAD-24FF-83D7AEBA70E4">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna faz referência à tabela Jogadores, indicando o jogador envolvido no evento.
+]]></commentInRDBMS>
+<generatorID>94B626EE-2D4F-C956-A6B5-4FB6D2F2ECA3</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<referedAttribute>130A693B-7ABC-9080-65D7-07BF929973A7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="eve par id" id="930B86E0-738B-6EF6-565E-803EAFB03BD3">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna faz referência à tabela Partidas, indicando a partida em que o evento ocorreu.
+]]></commentInRDBMS>
+<generatorID>95DE1EE1-B427-0599-5CCE-7E7996253E58</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<referedAttribute>0D85CC2F-777F-0A7D-CA98-4A76A3750B73</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="33C3D4B7-94E5-4F7D-A1D5-BC0B9C47057E" name="PK eve">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<generatorID>4018937F-2B65-C543-A63D-53F4C6A5368A</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>67658732-A1EF-E9BC-0F6C-28521DC2A055</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

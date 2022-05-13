@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CE7E1729-E7A7-7783-04D7-734FB8DD42F2" name="HSelecoes">
+<sourceDDLFile>copa.ddl</sourceDDLFile>
+<createdBy>kauan</createdBy>
+<createdTime>2022-04-08 01:08:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta tabela armazena dados referentes às seleções participantes.]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="hsel_id" id="F3CCC17F-6B70-D060-BCB6-830EFB3216B7">
+<createdBy>kauan</createdBy>
+<createdTime>2022-04-08 01:08:30 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hsel_nome" id="73ACEC9E-B31D-D0ED-973A-D8D0A6267CFB">
+<createdBy>kauan</createdBy>
+<createdTime>2022-04-08 01:08:30 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hsel_trigrama" id="412AD2D4-048B-9E98-B098-9A32A675F090">
+<createdBy>kauan</createdBy>
+<createdTime>2022-04-08 01:08:30 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hsel_date_in" id="9C548989-926F-04E8-AD53-6B9FD6046605">
+<createdBy>kauan</createdBy>
+<createdTime>2022-04-08 01:18:22 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="52FF85C7-36BF-680A-A8EA-8124640BEA5A" name="PK_hsel">
+<createdBy>kauan</createdBy>
+<createdTime>2022-04-08 01:08:30 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3CCC17F-6B70-D060-BCB6-830EFB3216B7"/>
+<colUsage columnID="9C548989-926F-04E8-AD53-6B9FD6046605"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

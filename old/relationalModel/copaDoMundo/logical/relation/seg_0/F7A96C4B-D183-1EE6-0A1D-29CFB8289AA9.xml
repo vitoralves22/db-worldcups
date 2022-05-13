@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_par_copv1" directorySegmentName="seg_0" id="F7A96C4B-D183-1EE6-0A1D-29CFB8289AA9">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<generatorID>A10D337C-251F-06E3-08EB-1F3899B62E45</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<sourcePk>DC527544-320F-101F-F219-3146BA5CB9B8</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0866D83E-2CAB-E837-0215-3531DEB5812D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5921B14A-6227-5EF3-ECDC-9540A3927123</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

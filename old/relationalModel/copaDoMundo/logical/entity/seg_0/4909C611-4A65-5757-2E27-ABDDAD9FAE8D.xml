@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4909C611-4A65-5757-2E27-ABDDAD9FAE8D" name="Estadios">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta tabela armazena dados referentes aos Estádios em que foram disponibilizadas para a realização das partidas.]]></commentInRDBMS>
+<generatorID>40F9D3FD-0D08-FD19-2DF2-26A02F89F4F4</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="est id" id="BFD8AE84-6D91-012E-AB65-B0A2A78608AE">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave primária da tabela ESTADIOS.]]></commentInRDBMS>
+<generatorID>2E1F2EA1-F46F-F8A5-9341-37DDB4FEA9BF</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="est cid id" id="567BCD54-EE14-A48F-B525-60A63E8B47C6">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna faz referência à tabela Cidade, indicando em qual cidade o estádio está localizado.
+]]></commentInRDBMS>
+<generatorID>983E2E9E-A110-9D8E-04EE-4E1169526BD9</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<referedAttribute>EF545A67-6EC6-E2A4-470B-31C16B2359D8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="est nome" id="7ADA4343-2F18-53B6-EE64-A6107FD39DF1">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna armazena o nome do estádio.
+]]></commentInRDBMS>
+<generatorID>E11B3555-C3B0-83C7-C2E2-84EDAF95BE06</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9221AF83-A7AD-0687-697F-2211E34494FC" name="PK est">
+<createdBy>kauan</createdBy>
+<createdTime>2022-03-11 15:50:30 UTC</createdTime>
+<generatorID>098C59C2-0A4B-CE87-D02B-12D2101BCF08</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BFD8AE84-6D91-012E-AB65-B0A2A78608AE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

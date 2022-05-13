@@ -1,0 +1,173 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E6D42A87-5E36-1288-71D9-8D43A4DF19FF" name="HPartidas">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Essa tabela armazena dados referentes a uma partida disputada durante a copa.]]></commentInRDBMS>
+<generatorID>58BCD5CE-50C3-9F30-0AFA-AA4281D72830</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="hpar id" id="75C4C801-4BE8-7E69-ACE2-1326771E4F89">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<generatorID>0409F570-EB80-0331-8ADF-AAC1D8A53669</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hpar data" id="FAA9AFFB-8AF0-2C21-4F15-A90403064B24">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<generatorID>CC5CAE34-EB7B-2B47-09AB-27CE78642066</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hpar publico" id="EE5B729E-9EFA-F452-E5E6-5E2F4B4D09AB">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<generatorID>B78F64A5-766F-73F2-830E-51C238A2985D</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hpar fase" id="702D3229-FC5A-0634-28CF-E0541B04591E">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<generatorID>3BECAE64-9DD6-67C6-4601-B482B1407479</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hpar condicoes de vitoria" id="C93B942F-E229-315C-795F-3EEB7B3C75CB">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<generatorID>5E347DC6-1A55-C536-EE69-D55218893D02</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hpar cop id" id="4A18E2BC-8750-E606-D3A4-59ADF45E08C7">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<generatorID>10793738-9EF1-7814-3E97-AC356DD93282</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hpar esc id A" id="402B33CD-BCD6-A871-056C-7850B9C39984">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<generatorID>92073020-D889-9A4E-4C0F-F164AF8EB4FC</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hpar esc id B" id="7862CDDC-D869-C539-C83A-4E6BE6386515">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<generatorID>D42C715D-2A2D-D215-8667-7D986B5F4A89</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hpar est id" id="455D6163-D005-6A99-9E44-4152A8D3FA50">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<generatorID>DCD58628-DFBB-8177-1F5B-6C42C5E235F6</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hpar date in" id="5D215F1B-34A0-B7CE-D8D6-DC70AD0AFD8A">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<generatorID>5F65C724-3613-17A4-1837-2B8754222180</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="48D8BEDE-454B-9D37-12D6-235CF5D58DDA" name="PK hpar">
+<createdBy>LenitaTakedaMisaki</createdBy>
+<createdTime>2022-04-13 01:06:29 UTC</createdTime>
+<generatorID>DDDC7C4F-778A-5421-F0F4-88F605BBAC9C</generatorID>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<engineerTo>
+<item key="F8D6B670-ACFE-F3A2-DE61-4FC097E12B08" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>75C4C801-4BE8-7E69-ACE2-1326771E4F89</attributeRef>
+<attributeRef>5D215F1B-34A0-B7CE-D8D6-DC70AD0AFD8A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

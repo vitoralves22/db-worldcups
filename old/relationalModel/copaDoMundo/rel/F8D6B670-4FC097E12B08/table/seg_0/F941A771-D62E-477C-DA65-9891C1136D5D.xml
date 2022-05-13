@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F941A771-D62E-477C-DA65-9891C1136D5D" name="Escalacoes">
+<sourceDDLFile>copa.ddl</sourceDDLFile>
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 22:31:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta tabela armazena dados referentes às escalações realizadas.]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="esc_id" id="97935CDD-FDC7-4479-D8A6-3CE35109FB22">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 22:34:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[chave primária da tabela ESCALACOES.]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="esc_sel_id" id="8EFEAEB8-9050-6C97-B1E3-CC022F01BDF2">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 22:34:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna faz referência à tabela Selecoes, indicando a qual seleção essa escalação pertence.
+]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3CEA2D50-AB9C-C8C7-C917-163C9591E164" referredColumn="41BBC7B3-3D24-71D9-D7EA-06FF3FD902AE"/>
+</associations>
+</Column>
+<Column name="esc_tre_id" id="AD677BFF-E6FE-3172-9E36-C5A9A3B3E718">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 22:34:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna faz referência à tabela Treinadores, indicando quem foi o treinador responsável por essa escalação.
+]]></commentInRDBMS>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F540F861-1033-B40F-C93A-8CE9EA6BFB09" referredColumn="9FED1F5D-BDE1-C10F-5825-1E90AB6D9648"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6B39E86F-D677-DB77-CFE2-540D4A5F4ECA" name="PK_esc">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 22:34:06 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97935CDD-FDC7-4479-D8A6-3CE35109FB22"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="02135447-224C-1913-89E9-53A2A395A364" name="FK_esc_sel">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 22:34:41 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8EFEAEB8-9050-6C97-B1E3-CC022F01BDF2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="196B3411-2630-DBE8-6F7C-48BD705B90D1" name="FK_esc_tre">
+<createdBy>kauan</createdBy>
+<createdTime>2022-02-25 22:35:00 UTC</createdTime>
+<ownerDesignName>copaDoMundo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD677BFF-E6FE-3172-9E36-C5A9A3B3E718"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
